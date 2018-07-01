@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeSongComposers", "LifeSongComposers\LifeSongComposers.csproj", "{CD292191-112C-48AB-9D3F-FDF8C6BE63EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD292191-112C-48AB-9D3F-FDF8C6BE63EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD292191-112C-48AB-9D3F-FDF8C6BE63EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD292191-112C-48AB-9D3F-FDF8C6BE63EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD292191-112C-48AB-9D3F-FDF8C6BE63EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E731672-E4EA-41AE-BCE9-8A66005B5FC3}
+	EndGlobalSection
+EndGlobal

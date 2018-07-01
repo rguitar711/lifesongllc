@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<div class="container">
+    <div style="margin-top:75px">
+
+    </div>
+    <div class="row">
+        <div>
+            <h1>Your Story, Your Song</h1>
+            <p class="lead">Choose to give the gift of a personalized song in three easy steps!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="offset-md-3">
+            <img src="~/Images/couple-resize.jpg" alt="couple" />
+
+        </div>
+    </div>
+
+    <div style="margin-top:25px">
+
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2><img src="~/Images/number1.png" alt="First Step" height="75" width="75" />&nbsp;Choose Genre</h2>
+            <p>
+                Audition tracks from various genres for your song.
+            </p>
+            <p>
+
+                @Html.ActionLink("Learn More", "TrackListing", "Store")
+            </p>
+
+        </div>
+        <div class="col-md-4">
+            <h2><img src="~/Images/number2.png" alt="Second Step" height="75" width="75" />&nbsp;Choose Artist</h2>
+            <p>Select an artist to sing your song.</p>
+            <p>@Html.ActionLink("Learn More", "Artist", "Store")</p>
+        </div>
+        <div class="col-md-4">
+            <h2><img src="~/Images/number3.png" alt="Third Step" height="75" width="75" />&nbsp;Submit Story </h2>
+            <p>Send us your story and we will turn it into lyrics</p>
+            <p>@Html.ActionLink("Learn More", "Story", "Store")</p>
+        </div>
+
+    </div>
+    </div>

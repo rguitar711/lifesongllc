@@ -1,0 +1,57 @@
+﻿@model IEnumerable<LifeSongComposers.ViewModels.TrackList>
+
+@{
+    ViewBag.Title = "VocalListing";
+}
+@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/player.js")"></script>
+
+}
+    <p>
+        <h2><img src="~/Images/number2.png" alt="first step" height="45" width="45" /> - Choose Vocalist</h2>
+
+    </p> 
+<p>
+
+</p>
+<table class="table" id="trackTable">
+    <tr>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Genre)
+        </th>
+    
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @*<a href="#"  class="song" data-song="@Url.Content(item.Path)"  onclick="play()" >@*<img src="~/Images/playpause.png" alt="playpause" id="playbutton"   />/a>*@
+                <a href="#" class="song" data-song="@Url.Content(item.Path)" onclick="playSong()"> @Html.DisplayFor(modelItem => item.Title)</a>
+            </td>
+            
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Title)*@
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Genre)*@
+            </td>
+            <td></td>
+        </tr>
+    }
+
+    
+
+</table>
+<p id="trackname">
+
+</p>
+<audio controls id="audioPlayer" typeof="audio/mp3" > </audio>
+    
+
